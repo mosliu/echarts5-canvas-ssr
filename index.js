@@ -1,5 +1,5 @@
 var echarts = require("echarts");
-var Canvas = require("canvas-prebuilt");
+const { createCanvas } = require('canvas')
 var fs = require('fs');
 var path = require('path');
 
@@ -20,7 +20,7 @@ module.exports = function (config) {
         Canvas = config.canvas;
     }
 
-    var ctx = new Canvas(128, 128);
+    var ctx = createCanvas(128, 128);
     if (config.font) {
         ctx.font = config.font;
     }
@@ -58,7 +58,7 @@ module.exports = function (config) {
     config = Object.assign({}, defaultConfig, config)
 
     config.option.animation = false;
-    chart = echarts.init(new Canvas(parseInt(config.width, 10), parseInt(config.height, 10)));
+    chart = echarts.init(createCanvas(parseInt(config.width, 10), parseInt(config.height, 10)));
     chart.setOption(config.option);
     if (config.path) {
         try {
@@ -70,7 +70,7 @@ module.exports = function (config) {
         } catch (err) {
             console.error("Error: Write File failed" + err.message)
         }
-        
+
     } else {
         var buffer = chart.getDom().toBuffer();
         try{

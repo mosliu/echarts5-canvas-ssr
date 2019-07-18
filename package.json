@@ -1,7 +1,7 @@
 {
-  "name": "node-echarts",
-  "version": "1.1.4",
-  "description": "",
+  "name": "node-echarts-canvas",
+  "version": "1.2.6",
+  "description": "Echarts server side render by node canvas, generate chart image by Echarts. 使用NodeJs服务器端渲染echarts图表，生成图片格式",
   "main": "index.js",
   "scripts": {
     "test": "./node_modules/.bin/ava"
@@ -13,17 +13,27 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/suxiaoxin/node-echarts.git"
+    "url": "git+https://github.com/jessezhang007007/node-echarts-canvas.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/suxiaoxin/node-echarts/issues"
+    "url": "https://github.com/jessezhang007007/node-echarts-canvas/issues"
   },
-  "homepage": "https://github.com/suxiaoxin/node-echarts#readme",
+  "homepage": "https://github.com/jessezhang007007/node-echarts-canvas#readme",
+  "keywords": [
+    "echarts",
+    "node",
+    "nodejs",
+    "node.js",
+    "canvas",
+    "image",
+    "ssr",
+    "server side render"
+  ],
   "dependencies": {
-    "canvas-prebuilt": "^1.6.5-prerelease.1",
-    "echarts": "^4.0.3"
+    "canvas": "^2.5.0",
+    "echarts": "^4.2.1"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0-beta.32",
