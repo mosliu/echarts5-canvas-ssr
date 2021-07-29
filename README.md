@@ -45,3 +45,14 @@ echarts(config)
 |option|Object|{}|Echarts Options|
 |path|String|-|Path is filepath of the image which will be created. If the path is empty, return buffer.|
 |enableAutoDispose|Boolean|true|Enable auto-dispose echarts after the image is created.|
+
+
+
+------
+广告
+------
+[超强接口管理工具：Apifox](https://www.apifox.cn/)
+
+[接口文档工具](https://www.apifox.cn/)
+
+[API文档工具](https://www.apifox.cn/)
