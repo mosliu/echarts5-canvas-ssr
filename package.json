@@ -4,9 +4,7 @@
   "description": "Echarts server side render by node canvas, generate chart image by Echarts5, support http access. 使用NodeJs服务器端渲染echarts 5图表，生成图片格式,支持网络访问",
   "main": "index.js",
   "scripts": {
-    "build": "babel server.js -d dist",
     "test": "./node_modules/.bin/ava",
-    "start2": "babel server.js",
     "start": "node server.js"
   },
   "ava": {
