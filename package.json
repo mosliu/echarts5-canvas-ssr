@@ -1,10 +1,13 @@
 {
-  "name": "node-echarts-canvas",
-  "version": "1.2.6",
-  "description": "Echarts server side render by node canvas, generate chart image by Echarts. 使用NodeJs服务器端渲染echarts图表，生成图片格式",
+  "name": "echart5-canvars-ssr",
+  "version": "1.0.0",
+  "description": "Echarts server side render by node canvas, generate chart image by Echarts5, support http access. 使用NodeJs服务器端渲染echarts 5图表，生成图片格式,支持网络访问",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/ava"
+    "build": "babel server.js -d dist",
+    "test": "./node_modules/.bin/ava",
+    "start2": "babel server.js",
+    "start": "node server.js"
   },
   "ava": {
     "require": [
@@ -13,14 +16,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jessezhang007007/node-echarts-canvas.git"
+    "url": "https://github.com/mosliu/echarts5-canvas-ssr.git"
   },
-  "author": "",
+  "author": "mosliu",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jessezhang007007/node-echarts-canvas/issues"
+    "url": "https://github.com/mosliu/echarts5-canvas-ssr/issues"
   },
-  "homepage": "https://github.com/jessezhang007007/node-echarts-canvas#readme",
+  "homepage": "https://github.com/mosliu/echarts5-canvas-ssr#readme",
   "keywords": [
     "echarts",
     "node",
@@ -32,12 +35,14 @@
     "server side render"
   ],
   "dependencies": {
-    "canvas": "^2.5.0",
-    "echarts": "^4.2.1"
+    "canvas": "^2.9.1",
+    "echarts": "^5.3.2"
   },
   "devDependencies": {
-    "@babel/core": "^7.0.0-beta.32",
-    "@babel/register": "^7.0.0-beta.32",
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.17.8",
+    "@babel/node": "^7.16.8",
+    "@babel/preset-env": "^7.16.11",
     "ava": "^0.23.0"
   }
 }
